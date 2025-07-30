@@ -26,7 +26,9 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     color: var(--primary-color);
     font-family: var(--primary-font);
 }
@@ -36,6 +38,9 @@ h3 {
     margin-bottom: 2rem;
 }
 
+.no-border {
+    border: none;
+}
 /* Button Styles */
 .custom-btn-filled {
     background-color: var(--highlight-color);
@@ -62,7 +67,7 @@ h3 {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    height: 50vh;
+    height: 60vh;
     color: white;
 }
 .hero-content {
@@ -70,8 +75,24 @@ h3 {
     color: var(--bg-color-1);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .hero h1 {
     color: var(--bg-color-1);
+}
+
+/* Thrive Section */
+.thrive {
+    background-color: var(--white-color);
+}
+
+.thrive .card img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.thrive .card-body {
+    color: var(--primary-color);
 }
 
 /* Media queries */
