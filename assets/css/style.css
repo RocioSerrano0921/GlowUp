@@ -31,6 +31,7 @@ h4,
 h5 {
     color: var(--primary-color);
     font-family: var(--primary-font);
+    font-weight: 600;
 }
 
 .section {
@@ -40,6 +41,12 @@ h5 {
 
 .no-border {
     border: none;
+}
+.no-margin {
+    margin: 0;
+}
+.highlight {
+    color: var(--highlight-color);
 }
 /* Button Styles */
 .custom-btn-filled {
@@ -95,10 +102,29 @@ h5 {
     color: var(--primary-color);
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ef732b; /* Color de fondo de la flecha */
+    border-radius: 50%; /* Redondear las flechas */
+    width: 3rem;
+    height: 3rem;
+    background-size: 50% 50%; /* Tamaño del ícono dentro del círculo */
+}
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
     .hero-content {
         background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Thrive Section */
+    /* Move arrows */
+    .carousel-control-prev {
+        left: -7rem;
+    }
+
+    .carousel-control-next {
+        right: -7rem;
     }
 }
