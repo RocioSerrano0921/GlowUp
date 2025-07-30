@@ -5,15 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlowUp</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" </head>
+
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="GlowUp logo" class="logo" width="45" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Home page -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- Thrive section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thrive">Thrive</a>
+                    </li>
+                    <!-- Awareness section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#awareness">Awareness</a>
+                    </li>
+                    <!-- Stories section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">Stories</a>
+                    </li>
+                    <!-- Self-Care section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#self-care">Self-Care</a>
+                    </li>
+                    <!-- Find Support section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#find-support">Contact Us</a>
+                    </li>
+                    <!-- get help button -->
+                    <li class="nav-item">
+                        <a href="#find-support" class="btn custom-btn-filled">Get Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="hero">
         <h2>Welcome to GlowUp</h2>
         <p>Your journey to transformation starts here.</p>
@@ -24,7 +72,7 @@
 
     </main>
 
-    <footer>
+    <footer class="mt-auto">
         <p>&copy; 2025 GlowUp. All rights reserved.</p>
     </footer>
 
