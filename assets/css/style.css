@@ -101,14 +101,6 @@ h5 {
     color: var(--primary-color);
 }
 
-#thrive .carousel-control-prev-icon,
-#thrive .carousel-control-next-icon {
-    background-color: var(--highlight-color);
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    background-size: 50% 50%;
-}
 /* Understanding Section */
 #understanding p {
     color: var(--bs-body-color) !important;
@@ -161,6 +153,15 @@ h5 {
     }
 
     /* Thrive Section */
+
+    #thrive .carousel-control-prev-icon,
+    #thrive .carousel-control-next-icon {
+        background-color: var(--highlight-color);
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        background-size: 50% 50%;
+    }
     /* Move arrows */
     .carousel-control-prev {
         left: -2rem;
