@@ -40,7 +40,7 @@ h5 {
 .no-border {
     border: none;
 }
-n .no-margin {
+.no-margin {
     margin: 0;
 }
 .highlight {
@@ -68,7 +68,7 @@ n .no-margin {
 /* Header/Hero section */
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url('../images/hero3.png');
     background-size: cover;
     background-position: center;
@@ -103,7 +103,7 @@ n .no-margin {
 
 #thrive .carousel-control-prev-icon,
 #thrive .carousel-control-next-icon {
-    background-color: #ef732b;
+    background-color: var(--highlight-color);
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
