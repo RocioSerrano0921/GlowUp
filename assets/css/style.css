@@ -109,10 +109,9 @@ n .no-margin {
     height: 3rem;
     background-size: 50% 50%;
 }
-
-/* Stories Section */
-.stories {
-    background-color: var(--white-color);
+/* Understanding Section */
+#understanding p {
+    color: var(--bs-body-color) !important;
 }
 
 /* Find Support Section */
@@ -181,7 +180,7 @@ n .no-margin {
 /* Extra large devices (large laptops 1200px and up) */
 @media screen and (min-width: 1200px) {
     #understanding .card-text {
-        min-height: 200px;
+        min-height: 240px;
     }
     /* Self-care section */
     #self-care .card-body {
