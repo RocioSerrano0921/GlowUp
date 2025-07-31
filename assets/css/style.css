@@ -117,6 +117,14 @@ h5 {
     background-color: var(--white-color);
 }
 
+/* Find Support Section */
+#find-support {
+    background-color: var(--white-color);
+}
+#find-support .get-help a {
+    min-width: 137px;
+}
+
 /* Media queries */
 
 /* Medium devices (tablets, 768px and up) */
@@ -140,10 +148,6 @@ h5 {
     #self-care .card-body {
         min-height: 348px;
     }
-
-    /* #understanding .card-text {
-        min-height: 264px;
-    } */
 }
 
 /* Large devices (small laptops 992px and up) */
@@ -162,9 +166,8 @@ h5 {
     #understanding .card-text {
         min-height: 200px;
     }
-
     /* Self-care section */
     #self-care .card-body {
-        min-height: 355px;
+        min-height: 428px;
     }
 }
