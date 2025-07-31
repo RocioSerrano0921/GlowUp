@@ -17,11 +17,11 @@
 
 <body class="d-flex flex-column min-vh-100 ">
 
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <!-- logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="GlowUp logo" class="logo" width="45">
+                <img src="assets/images/logo.png" alt="GlowUp logo" class="logo" width="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -66,26 +66,26 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero d-flex align-items-center"">
+    <header class="hero d-flex align-items-center section">
         <div class=" hero-overlay w-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class=" col-md-10 col-12">
-                    <div class="text-center hero-content">
-                        <h1 class="display-4 mb-4 hero-heading">Glow Up Your Mind, Glow Up Your Life</h1>
-                        <p class="lead mb-4">Your glow up starts from the inside.
-                            Take one gentle step today, and let your mind and heart shine brighter tomorrow.</p>
-                        <button type="button" class="btn custom-btn-filled btn-lg">Find Support</button>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class=" col-md-10 col-12">
+                        <div class="text-center hero-content">
+                            <h1 class="display-4 mb-4 hero-heading">Glow Up Your Mind, Glow Up Your Life</h1>
+                            <p class="lead mb-4">Your glow up starts from the inside.
+                                Take one gentle step today, and let your mind and heart shine brighter tomorrow.</p>
+                            <button type="button" class="btn custom-btn-filled btn-lg">Find Support</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
 
     <main>
         <!-- Thrive Section -->
-        <section id="thrive" class="thrive ">
+        <section id="thrive" class="thrive section">
             <div class="col-12 pt-5 text-center ">
                 <h2 class="display-5 mb-3 fw-bold">Positive Vibes</h2>
             </div>
@@ -206,12 +206,13 @@
             </div>
         </section>
         <!-- Understanding Section -->
-        <section id="understanding" class="understanding pb-5">
+        <section id="understanding" class="understanding section pb-5">
             <div class="container">
-                <div class="text-center my-5">
+                <div class="text-center py-5">
                     <h2 class="display-5 fw-bold">Understanding my Mental Health</h2>
                     <p class="lead text-muted">
-                        Taking a moment to understand our mind is an act of self-care. When we pause and listen to our
+                        Taking a moment to understand our mind is an act of self-care. When we pause and listen to
+                        our
                         emotions, we create space for balance, clarity, and a gentle sense of peace.
                     </p>
                 </div>
@@ -284,7 +285,7 @@
         </section>
 
         <!-- Stories  Section -->
-        <section id="stories" class=" stories py-5">
+        <section id="stories" class=" stories py-5 section">
             <div class="container my-5">
                 <div class="row">
                     <div class="col-12">
@@ -485,7 +486,7 @@
         </section>
 
         <!-- Find Support Section -->
-        <section id="find-support" class="find-support py-5">
+        <section id="find-support" class="find-support py-5 section">
             <div class="your-story container my-4">
                 <div class="row align-items-center">
                     <div class="col-12 text-center">
@@ -557,6 +558,28 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cdebd34922.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
