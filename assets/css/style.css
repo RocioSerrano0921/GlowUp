@@ -129,11 +129,16 @@ h5 {
     /* Thrive Section */
     /* Move arrows */
     .carousel-control-prev {
-        left: -7rem;
+        left: -2rem;
     }
 
     .carousel-control-next {
-        right: -7rem;
+        right: -2rem;
+    }
+
+    /* Self-care section */
+    #self-care .card-body {
+        min-height: 348px;
     }
 
     /* #understanding .card-text {
@@ -146,11 +151,20 @@ h5 {
     #understanding .card-text {
         min-height: 312px;
     }
+    /* Self-care section */
+    #self-care .card-body {
+        min-height: 505px;
+    }
 }
 
 /* Extra large devices (large laptops 1200px and up) */
 @media screen and (min-width: 1200px) {
     #understanding .card-text {
         min-height: 200px;
+    }
+
+    /* Self-care section */
+    #self-care .card-body {
+        min-height: 355px;
     }
 }
