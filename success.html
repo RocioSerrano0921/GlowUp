@@ -34,7 +34,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <!-- Home page -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" alt="Go to Home page">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html" title="Go to Home page">Home</a>
                     </li>
                     <!-- Thrive section -->
                     <li class="nav-item">
@@ -43,27 +43,25 @@
                     <!-- Awareness section -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#understanding"
-                            alt="Go to Understanding section">Understanding</a>
+                            title="Go to Understanding section">Understanding</a>
                     </li>
                     <!-- Stories section -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#stories" alt="Go to Stories section">Stories</a>
+                        <a class="nav-link" href="index.html#stories" title="Go to Stories section">Stories</a>
                     </li>
                     <!-- Self-Care section -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#self-care" alt="Go to Self-Care section">Self-Care</a>
+                        <a class="nav-link" href="index.html#self-care" title="Go to Self-Care section">Self-Care</a>
                     </li>
                     <!-- Find Support section -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#find-support" alt="Go to Find Support section">Contact
+                        <a class="nav-link" href="index.html#find-support" title="Go to Find Support section">Contact
                             Us</a>
                     </li>
 
                 </ul>
             </div>
         </div>
-    </nav>
-
     </nav>
 
     <!-- success message for users who successfully submit a form -->
@@ -108,15 +106,15 @@
                 link.addEventListener("click", function (e) {
                     let section = document.querySelector(e.target.getAttribute("href"));
                     if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        e.preventDefault();
+                        let navbarHeight = document.querySelector("#navbar").offsetHeight; // Fixed
                         window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            top: section.offsetTop - navbarHeight,
                             behavior: "smooth",
                         });
                         document
                             .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
+                            .classList.remove("show");
                     }
                 });
             });
