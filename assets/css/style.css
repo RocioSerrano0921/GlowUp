@@ -103,13 +103,18 @@ h5 {
     color: var(--primary-color);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+#thrive .carousel-control-prev-icon,
+#thrive .carousel-control-next-icon {
     background-color: #ef732b; /* Color de fondo de la flecha */
     border-radius: 50%; /* Redondear las flechas */
     width: 3rem;
     height: 3rem;
     background-size: 50% 50%; /* Tamaño del ícono dentro del círculo */
+}
+
+/* Stories Section */
+.stories {
+    background-color: var(--white-color);
 }
 
 /* Media queries */
