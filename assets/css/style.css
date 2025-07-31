@@ -73,7 +73,7 @@ n .no-margin {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    height: 80vh;
+    height: 100vh;
     color: white;
 }
 .hero-content {
