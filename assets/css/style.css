@@ -7,8 +7,9 @@
     --secondary-color: #6fa8dc;
     --highlight-color: #ef732b;
     --highlight-color-light: #f4ede4;
-    --bg-color-1: #f9d8c7;
+    --bg-color-1: #fadfc6;
     --white-color: #ffffff;
+
     --primary-font: 'Nunito Sans', sans-serif;
     --secondary-font: sans-serif;
     --font-size: 16px;
@@ -39,7 +40,7 @@ h5 {
 .no-border {
     border: none;
 }
-.no-margin {
+n .no-margin {
     margin: 0;
 }
 .highlight {
@@ -68,7 +69,7 @@ h5 {
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url('../images/hero3.png'); /* Pon aquí tu imagen */
+        url('../images/hero3.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -77,12 +78,12 @@ h5 {
 }
 .hero-content {
     padding: 2rem;
-    color: var(--bg-color-1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
-    color: var(--bg-color-1);
+    color: var(--white-color);
 }
 
 /* Thrive Section */
@@ -102,11 +103,11 @@ h5 {
 
 #thrive .carousel-control-prev-icon,
 #thrive .carousel-control-next-icon {
-    background-color: #ef732b; /* Color de fondo de la flecha */
-    border-radius: 50%; /* Redondear las flechas */
+    background-color: #ef732b;
+    border-radius: 50%;
     width: 3rem;
     height: 3rem;
-    background-size: 50% 50%; /* Tamaño del ícono dentro del círculo */
+    background-size: 50% 50%;
 }
 
 /* Stories Section */
@@ -125,12 +126,20 @@ h5 {
 /* your-story page */
 .hero-story {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url('../images/write-a-story.png'); /* Pon aquí tu imagen */
+        url('../images/write-a-story.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     height: 80vh;
     color: white;
+}
+.hero-story h1 {
+    color: var(--white-color);
+}
+
+/* success page  */
+#success {
+    margin: auto auto;
 }
 
 /* Media queries */
