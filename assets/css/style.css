@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
+    --bs-body-color: #2c5c88;
     --primary-color: #2c5c88;
     --secondary-color: #6fa8dc;
     --highlight-color: #ef732b;
@@ -21,7 +22,6 @@ body {
     font-family: var(--secondary-font);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    color: var(--primary-color);
     background-color: var(--bg-color-1);
 }
 h1,
@@ -48,6 +48,7 @@ h5 {
 .highlight {
     color: var(--highlight-color);
 }
+
 /* Button Styles */
 .custom-btn-filled {
     background-color: var(--highlight-color);
@@ -113,6 +114,8 @@ h5 {
 
 /* Media queries */
 
+/* Medium devices (tablets, 768px and up) */
+
 @media screen and (min-width: 768px) {
     .hero-content {
         background: rgba(255, 255, 255, 0.2);
@@ -126,5 +129,23 @@ h5 {
 
     .carousel-control-next {
         right: -7rem;
+    }
+
+    /* #understanding .card-text {
+        min-height: 264px;
+    } */
+}
+
+/* Large devices (small laptops 992px and up) */
+@media screen and (min-width: 992px) {
+    #understanding .card-text {
+        min-height: 312px;
+    }
+}
+
+/* Extra large devices (large laptops 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #understanding .card-text {
+        min-height: 200px;
     }
 }
