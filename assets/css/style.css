@@ -114,6 +114,11 @@ n .no-margin {
     color: var(--bs-body-color) !important;
 }
 
+/* Stories Section */
+.stories {
+    background-color: var(--white-color);
+}
+
 /* Find Support Section */
 #find-support {
     background-color: var(--white-color);
@@ -134,6 +139,11 @@ n .no-margin {
 }
 .hero-story h1 {
     color: var(--white-color);
+}
+
+/* Your-story form page */
+#your-story {
+    background-color: var(--white-color);
 }
 
 /* success page  */
