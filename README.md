@@ -177,3 +177,21 @@ cope and promoting self-awareness for improved mental well-being.
 
 ![undestanding-mobile](assets/images/understanding-mobile.png)
 ![undestanding-desktop](assets/images/Understanding-desktop.png)
+
+## Stories Section
+
+## Validation
+
+![html-validation](assets/images/html-validation.png)
+
+![lighthouse-desktop](assets/images/lighthouse-desktop.png)
+![lighthouse-mobile](assets/images/lighthouse-mobile.png)
+
+## Deployment
+
+-   In the GitHub repository, navigate to the Settings tab.
+-   Scroll down until GitHub Pages is found.
+-   From the source section drop-down menu, select the main branch.
+-   Once the main branch has been selected, hit the save button.
+-   Finally, when the page is refreshed, a detailed ribbon display will indicate the successful
+    deployment.
