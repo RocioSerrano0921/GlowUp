@@ -6,12 +6,9 @@
     --primary-color: #2c5c88;
     --secondary-color: #6fa8dc;
     --highlight-color: #ef732b;
-    --highlight-color-light: #f6b48e;
-    --text-color: #4a4a4a;
-    --bg-color-1: #f4ede4;
-    --bg-color-2: #fff5ee;
+    --highlight-color-light: #f4ede4;
+    --bg-color-1: #f9d8c7;
     --white-color: #ffffff;
-
     --primary-font: 'Nunito Sans', sans-serif;
     --secondary-font: sans-serif;
     --font-size: 16px;
@@ -132,7 +129,7 @@ h5 {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    height: 60vh;
+    height: 80vh;
     color: white;
 }
 
