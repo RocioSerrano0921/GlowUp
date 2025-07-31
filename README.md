@@ -184,7 +184,10 @@ cope and promoting self-awareness for improved mental well-being.
 
 ![html-validation](assets/images/html-validation.png)
 
-![lighthouse-desktop](assets/images/lighthouse-desktop.png)
+## Lighthouse
+
+Lighthouse was used to test the performance, accessibility, best practices, and SEO of the website.
+The results are as follows: ![lighthouse-desktop](assets/images/lighthouse-desktop.png)
 ![lighthouse-mobile](assets/images/lighthouse-mobile.png)
 
 ## Deployment
