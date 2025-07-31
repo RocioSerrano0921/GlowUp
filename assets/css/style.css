@@ -102,6 +102,7 @@ h5 {
 }
 
 /* Understanding Section */
+
 #understanding p {
     color: var(--bs-body-color) !important;
 }
